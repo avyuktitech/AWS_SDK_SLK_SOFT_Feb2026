@@ -1,0 +1,40 @@
+AWS Certified SysOps Administrator – Associate (SOA-C02)
+Industry Standard: Often considered the hardest Associate exam because it focuses on "Day 2 Operations"—keeping things running, scaling, and cost-optimized.
+
+Cost: $150 USD
+
+Format: 65 Questions | 130 Minutes | Pass = 720
+
+TOC Modules:
+
+Monitoring & Remediation (20%): CloudWatch Alarms and automated healing.
+
+Reliability & Business Continuity (16%): Multi-AZ RDS, Route 53 health checks, and backups.
+
+Deployment & Automation (18%): IaC logic (Terraform/CloudFormation) and Systems Manager (SSM).
+
+Networking & Security (34%): VPC, Security Groups, and KMS Key Policies.
+
+How to Take the Exams
+AWS Exams: Register via the AWS Certification Portal. You can take them at a Pearson VUE testing center or as an online proctored exam from home.
+
+Terraform Exam: Register via the HashiCorp/BookMyShow platform. It is typically online proctored.
+
+How to Elect the Right Exam (for Laterals)
+For someone with 20 years of experience, I recommend "The Professional Pairing":
+
+Choice A: The "Dev-First" Route
+
+Candidate: Application Architects or Software Leads.
+
+Pairing: AWS Developer Associate + Terraform Associate.
+
+Value: Proves you can build modern, automated microservices.
+
+Choice B: The "Platform-First" Route
+
+Candidate: Infrastructure Leads, IT Managers, or DevOps Leads.
+
+Pairing: AWS SysOps Associate + Terraform Associate.
+
+Value: Proves you can govern, secure, and automate enterprise-grade cloud environments.
