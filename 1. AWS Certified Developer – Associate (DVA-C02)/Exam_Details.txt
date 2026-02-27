@@ -1,0 +1,40 @@
+AWS Certified Developer – Associate (DVA-C02)
+Industry Standard: This is the gold standard for "Builders." It proves you can actually write code that interacts with the cloud, rather than just clicking buttons in a console.
+
+Cost: $150 USD
+
+Format: 65 Questions | 130 Minutes | Scaled score (100–1000); Pass = 720
+
+TOC Modules:
+
+Development with AWS Services (32%): SDK (Boto3), Lambda triggers, DynamoDB CRUD, and API Gateway.
+
+Security (26%): IAM Roles for Lambda, KMS encryption, and Secrets Manager.
+
+Deployment (24%): CI/CD, Serverless Application Model (SAM), and container images (ECR/ECS).
+
+Troubleshooting (18%): CloudWatch Logs and X-Ray tracing.
+
+How to Take the Exams
+AWS Exams: Register via the AWS Certification Portal. You can take them at a Pearson VUE testing center or as an online proctored exam from home.
+
+Terraform Exam: Register via the HashiCorp/BookMyShow platform. It is typically online proctored.
+
+How to Elect the Right Exam (for Laterals)
+For someone with 20 years of experience, I recommend "The Professional Pairing":
+
+Choice A: The "Dev-First" Route
+
+Candidate: Application Architects or Software Leads.
+
+Pairing: AWS Developer Associate + Terraform Associate.
+
+Value: Proves you can build modern, automated microservices.
+
+Choice B: The "Platform-First" Route
+
+Candidate: Infrastructure Leads, IT Managers, or DevOps Leads.
+
+Pairing: AWS SysOps Associate + Terraform Associate.
+
+Value: Proves you can govern, secure, and automate enterprise-grade cloud environments.
