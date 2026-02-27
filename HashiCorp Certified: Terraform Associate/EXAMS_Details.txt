@@ -1,0 +1,40 @@
+HashiCorp Certified: Terraform Associate (004)
+Industry Standard: The industry-recognized badge for Infrastructure as Code (IaC). In 2026, the updated 004 version is the current standard.
+
+Cost: $70.50 USD
+
+Format: 57–60 Questions | 60 Minutes | Multiple choice & matching.
+
+TOC Modules:
+
+Terraform Fundamentals: Understanding the Plan → Apply lifecycle.
+
+State Management: Local vs. Remote backends and state locking.
+
+Modules: Creating reusable components for AWS resources.
+
+Configuration: HCL (HashiCorp Configuration Language), variables, and dynamic blocks.
+
+How to Take the Exams
+AWS Exams: Register via the AWS Certification Portal. You can take them at a Pearson VUE testing center or as an online proctored exam from home.
+
+Terraform Exam: Register via the HashiCorp/BookMyShow platform. It is typically online proctored.
+
+How to Elect the Right Exam (for Laterals)
+For someone with 20 years of experience, I recommend "The Professional Pairing":
+
+Choice A: The "Dev-First" Route
+
+Candidate: Application Architects or Software Leads.
+
+Pairing: AWS Developer Associate + Terraform Associate.
+
+Value: Proves you can build modern, automated microservices.
+
+Choice B: The "Platform-First" Route
+
+Candidate: Infrastructure Leads, IT Managers, or DevOps Leads.
+
+Pairing: AWS SysOps Associate + Terraform Associate.
+
+Value: Proves you can govern, secure, and automate enterprise-grade cloud environments.
