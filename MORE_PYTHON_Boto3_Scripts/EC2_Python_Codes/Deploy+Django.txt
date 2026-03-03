@@ -1,0 +1,58 @@
+
+1 - sudo -i = became root user
+
+2 - sudo yum update -y = update packages
+
+3 - sudo yum install mariadb-server
+
+enable mariadb 
+
+4 - sudo systemctl enable mariadb
+
+now start mariadb
+
+5 - sudo systemctl start mariadb
+
+reset the security of mariadb
+
+6 - mysql_secure_installation
+
+login to the database
+7 - mysql -uroot -p
+
+now create database
+8 - create database mydatabase;
+
+9 - use mydatabase;
+
+
+-----
+
+now install python3
+yum install python3
+
+pip3 install django
+
+yum install mysql-devel gcc gcc-devel python3-devel
+
+pip3 install mysqlclient
+
+
+---- another step -----
+
+install git
+yum install git
+
+
+python3 manage.py migrate
+
+
+enable port 8000 in security
+
+go to security group and create a new group with port 8000
+
+python3 manage.py runserver 0.0.0.0:8000
+
+http://ec2-3-88-192-51.compute-1.amazonaws.com:8000/
+
+
