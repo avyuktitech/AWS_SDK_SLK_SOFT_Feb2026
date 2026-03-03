@@ -1,0 +1,7 @@
+How to Test (Next Step)
+Kinesis: You can test immediately using the AWS CLI:
+
+PowerShell
+
+aws kinesis put-record --stream-name ssdn-kinesis-stream --data "Hello SSDN" --partition-key 1
+MSK: You will need a client (like an EC2 instance) inside the same VPC to produce/consume messages using Kafka scripts.
