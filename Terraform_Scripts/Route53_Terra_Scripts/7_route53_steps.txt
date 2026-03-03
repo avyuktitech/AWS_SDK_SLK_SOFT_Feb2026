@@ -1,0 +1,11 @@
+
+# Get one of your name servers from the Terraform output 
+# (It looks like ns-xxxx.awsdns-xx.com)
+nslookup web.ssdn-labs.com [INSERT_YOUR_AWS_NAME_SERVER_HERE]
+
+PS C:\Users\KITS\OneDrive\Desktop\SDK_Mak1\Terraform working script> nslookup web.ssdn-labs.com ns-1221.awsdns-24.org
+Server:  UnKnown
+Address:  205.251.196.197
+
+Name:    web.ssdn-labs.com
+Address:  192.168.1.10
