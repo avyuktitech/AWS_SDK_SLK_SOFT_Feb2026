@@ -1,0 +1,21 @@
+Scenario: The Pizza Shop
+SNS: The customer places an order. SNS "broadcasts" that an order happened.
+
+SQS Queue 1 (Kitchen): Gets a message to start cooking.
+
+SQS Queue 2 (Accounting): Gets a message to generate an invoice.
+
+Decoupling: Tell them: "If the Kitchen app crashes, the Accounting app still gets the message. That's why we use Queues!"
+
+The "State" Check
+After running terraform apply:
+
+***** ***Step1: Go to the SQS Console.****************
+
+***** ***Step2 :Click Send and receive messages.
+
+***** ***Step3:Go to the SNS Console.
+
+***** ***Step4 Publish a message to your topic.
+
+***** ***Step:5 : Go back to SQS and "Poll for messages"—the interns will see the message arrive automatically!
