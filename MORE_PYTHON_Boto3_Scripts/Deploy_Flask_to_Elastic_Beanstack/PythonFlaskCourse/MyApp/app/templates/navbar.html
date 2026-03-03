@@ -1,0 +1,155 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="{{url_for('index')}}">PythonFlask</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+          {% if current_user.is_authenticated %}
+
+          <li class="nav-item">
+          <a class="nav-link disabled">Welcome Mr, {{current_user.username}}</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+        </li>
+
+         <li class="nav-item">
+          <a style="cursor:pointer;" class="nav-link" data-bs-toggle="modal" data-bs-target="#mymodal" >Add Article</a>
+        </li>
+
+            <li class="nav-item">
+          <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+        </li>
+
+          {%  endif %}
+
+          {% if not current_user.is_authenticated %}
+         <li class="nav-item">
+          <a style="cursor:pointer;" class="nav-link" data-bs-toggle="modal" data-bs-target="#regmodal">Register</a>
+        </li>
+
+            <li class="nav-item">
+          <a class="nav-link" href="{{url_for('login')}}">Login</a>
+            </li>
+
+          {% endif %}
+
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+
+ <!-- insert model -->
+ <div id="mymodal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title">Add Article</h4>
+         </div>
+         <div class="modal-body">
+
+            <form action="{{url_for('add_article')}}" method="POST">
+
+
+               <div class="form-group">
+
+                  <label>Title:</label>
+                  <input type="text" class="form-control" name="title" required="1">
+
+               </div>
+
+
+                <div class="form-group">
+                  <label>Description:</label>
+                    <textarea class="form-control" name="description"></textarea>
+               </div>
+
+               <div class="form-group">
+                  <button class="btn btn-primary mt-4" type="submit">Add Article</button>
+               </div>
+
+
+            </form>
+
+
+         </div>
+
+
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+         </div>
+
+
+      </div>
+
+
+   </div>
+
+
+</div>
+
+
+
+<!-- register model -->
+ <div id="regmodal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title">Register User</h4>
+         </div>
+         <div class="modal-body">
+
+            <form action="{{url_for('register')}}" method="POST">
+
+
+               <div class="form-group">
+                  <label>Username:</label>
+                  <input type="text" class="form-control" name="username" required="1">
+
+               </div>
+
+                 <div class="form-group">
+                  <label>Password:</label>
+                  <input type="password" class="form-control" name="password" required="1">
+
+               </div>
+
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input type="email" class="form-control" name="email" required="1">
+
+               </div>
+
+
+
+               <div class="form-group">
+                  <button class="btn btn-primary mt-4" type="submit">Register Account</button>
+               </div>
+
+
+            </form>
+
+
+         </div>
+
+
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+         </div>
+
+
+      </div>
+
+
+   </div>
+
+
+</div>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Add Article {% endblock %}
+
+{% block body %}
+  <div class="container">
+    <h1>Add Article</h1>
+
+    <form action="" method="post" novalidate>
+      {{form.csrf_token}}
+
+      <p>
+        {{form.title.label}}<br>
+        {{form.title(size=32)}}
+
+        {%  for error in form.title.errors %}
+            <span style="color:red">{{error}}</span>
+        {% endfor %}
+      </p>
+
+       <p>
+        {{form.description.label}}<br>
+        {{form.description(cols="35", rows="10")}}
+
+        {%  for error in form.description.errors %}
+            <span style="color:red">{{error}}</span>
+        {% endfor %}
+      </p>
+
+      <p>
+        <input type="submit" value="Add Article" class="btn btn-success">
+      </p>
+
+    </form>
+
+
+  </div>
+
+{% endblock %}

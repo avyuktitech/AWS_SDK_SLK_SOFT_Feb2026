@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Regisrtation {% endblock %}
+
+
+{% block body %}
+  <div class="container">
+    <h1>Register Here</h1>
+
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success alert-dismissable" role="alert">
+                    {{message}}
+                </div>
+            {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+
+    <form action="" method="post" novalidate>
+        {{form.csrf_token}}
+     <p>
+        {{form.username.label}}<br>
+        {{form.username(size=32)}}
+
+         {% for error in form.username.errors %}
+            <span style="color:red">{{error}}</span>
+         {% endfor %}
+     </p>
+
+      <p>
+        {{form.password.label}}<br>
+        {{form.password(size=32)}}
+
+           {% for error in form.password.errors %}
+            <span style="color:red">{{error}}</span>
+         {% endfor %}
+      </p>
+
+      <p>
+        {{form.email.label}}<br>
+        {{form.email(size=32)}}
+
+         {% for error in form.password.errors %}
+            <span style="color:red">{{error}}</span>
+         {% endfor %}
+      </p>
+
+        <p>
+            <input type="submit" value="Register" class="btn btn-success">
+        </p>
+
+    </form>
+
+  </div>
+
+{% endblock %}
